@@ -1,0 +1,36 @@
+{
+    "app_id": "d6b9dc970bf8bda3fff0b3ecb38e01",
+    "collection_id": "ecefdc970bacd9b6eae1e58eb3f801",
+    "items": [],
+    "name": "Tags",
+    "permissions": {
+        "Authenticated": 15
+    },
+    "schema": [
+        {
+            "ColumnName": "item_id",
+            "ColumnType": "uuid",
+            "PK": true
+        },
+        {
+            "ColumnName": "id",
+            "ColumnType": "string",
+            "PK": false
+        },
+        {
+            "ColumnName": "payload",
+            "ColumnType": "string",
+            "PK": false
+        },
+        {
+            "ColumnName": "last_updated",
+            "ColumnType": "timestamp",
+            "PK": false
+        },
+        {
+            "ColumnName": "magnetized",
+            "ColumnType": "bool",
+            "PK": false
+        }
+    ]
+}
