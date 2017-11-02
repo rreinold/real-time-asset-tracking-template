@@ -1,0 +1,12 @@
+{
+    "current_version": 49,
+    "dependencies": "log,clearblade",
+    "logging_enabled": "true",
+    "name": "messageToCollectionCreate",
+    "params": [],
+    "permissions": {
+        "Authenticated": 1
+    },
+    "run_user": "",
+    "source": "messageToCollectionCreate.js"
+}
