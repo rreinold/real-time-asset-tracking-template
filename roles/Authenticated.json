@@ -1,0 +1,66 @@
+{
+    "Description": "Default role that is applied to all authenticated users",
+    "ID": "Authenticated",
+    "Name": "Authenticated",
+    "Permissions": {
+        "CodeServices": [
+            {
+                "Level": 1,
+                "Name": "messageToCollectionCreate",
+                "SystemKey": "d6b9dc970bf8bda3fff0b3ecb38e01"
+            },
+            {
+                "Level": 1,
+                "Name": "messageToCollectionUpdate",
+                "SystemKey": "d6b9dc970bf8bda3fff0b3ecb38e01"
+            },
+            {
+                "Level": 1,
+                "Name": "messageToHTTPPost",
+                "SystemKey": "d6b9dc970bf8bda3fff0b3ecb38e01"
+            }
+        ],
+        "Collections": [
+            {
+                "Columns": [],
+                "ID": "e8c2dc970bbed3bd91a3bdcec806",
+                "Items": [],
+                "Level": 15,
+                "Name": "MessageHistory"
+            },
+            {
+                "Columns": [],
+                "ID": "ecefdc970bacd9b6eae1e58eb3f801",
+                "Items": [],
+                "Level": 15,
+                "Name": "Tags"
+            }
+        ],
+        "DevicesList": {
+            "Level": 0
+        },
+        "MsgHistory": {
+            "Level": 0
+        },
+        "Portals": [
+            {
+                "Level": 5,
+                "Name": "tracking",
+                "SystemKey": "d6b9dc970bf8bda3fff0b3ecb38e01"
+            },
+            {
+                "Level": 5,
+                "Name": "CJS_Portal",
+                "SystemKey": "d6b9dc970bf8bda3fff0b3ecb38e01"
+            }
+        ],
+        "Push": {
+            "Level": 0
+        },
+        "SystemServices": null,
+        "Topics": [],
+        "UsersList": {
+            "Level": 0
+        }
+    }
+}
