@@ -1,0 +1,11 @@
+{
+    "deployInfo": [
+        {
+            "edge": "{\"FILTERS\":[[{\"EQ\":[{\"name\":\"laptop_test\"}]}]]}",
+            "platform": false,
+            "resource_identifier": "messageToCollectionCreate",
+            "resource_type": "service",
+            "system_key": "d6b9dc970bf8bda3fff0b3ecb38e01"
+        }
+    ]
+}
