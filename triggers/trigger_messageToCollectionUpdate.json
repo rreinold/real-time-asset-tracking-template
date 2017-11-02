@@ -1,0 +1,15 @@
+{
+    "event_definition": {
+        "def_keys": [
+            "topic"
+        ],
+        "def_module": "Messaging",
+        "def_name": "Publish",
+        "visibility": true
+    },
+    "key_value_pairs": {
+        "topic": "position"
+    },
+    "name": "trigger_messageToCollectionUpdate",
+    "service_name": "messageToCollectionUpdate"
+}
