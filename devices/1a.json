@@ -1,0 +1,11 @@
+{
+    "allow_certificate_auth": true,
+    "allow_key_auth": true,
+    "certificate": null,
+    "description": null,
+    "enabled": true,
+    "name": "1a",
+    "payload": "payload",
+    "state": "updated",
+    "type": ""
+}
