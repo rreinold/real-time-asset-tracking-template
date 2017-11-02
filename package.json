@@ -24,7 +24,7 @@
   "protocols": [
     "mqtt"
   ],
-  "domains:" [
+  "domains":[
     "Asset Tracking"
   ],
   "author": "Robert Reinold",
@@ -32,6 +32,6 @@
   "bugs": {
     "url": "https://github.com/rreinold/real-time-asset-tracking-template/issues"
   },
-  image_url:"https://raw.githubusercontent.com/rreinold/real-time-asset-tracking-template/master/banner.png"
+  "image_url":"https://raw.githubusercontent.com/rreinold/real-time-asset-tracking-template/master/banner.png",
   "homepage": "https://github.com/rreinold/real-time-asset-tracking-template#readme"
 }
