@@ -1,0 +1,9 @@
+{
+    "columns": [
+        {
+            "ColumnName": "payload",
+            "ColumnType": "string",
+            "PK": false
+        }
+    ]
+}
