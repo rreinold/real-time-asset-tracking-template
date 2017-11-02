@@ -1,0 +1,37 @@
+{
+  "name": "real-time-asset-tracking-template",
+  "version": "1.5.0",
+  "description": "Real-time asset tracking template for ClearBlade Platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rreinold/real-time-asset-tracking-template.git"
+  },
+  "keywords": [
+    "position",
+    "tracking",
+    "gps",
+    "real",
+    "time",
+    "asset",
+    "tracking",
+    "clearblade",
+    "platform"
+  ],
+  "protocols": [
+    "mqtt"
+  ],
+  "domains:" [
+    "Asset Tracking"
+  ],
+  "author": "Robert Reinold",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rreinold/real-time-asset-tracking-template/issues"
+  },
+  image_url:"https://raw.githubusercontent.com/rreinold/real-time-asset-tracking-template/master/banner.png"
+  "homepage": "https://github.com/rreinold/real-time-asset-tracking-template#readme"
+}
