@@ -27,7 +27,7 @@
   "domains":[
     "Asset Tracking"
   ],
-  "author": "Robert Reinold",
+  "author": {"email":"rob@clearblade.com"},
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rreinold/real-time-asset-tracking-template/issues"
