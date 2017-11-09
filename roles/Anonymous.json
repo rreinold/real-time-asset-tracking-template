@@ -4,14 +4,28 @@
     "Name": "Anonymous",
     "Permissions": {
         "CodeServices": [],
-        "Collections": [],
+        "Collections": [
+            {
+                "Columns": [],
+                "ID": "ecefdc970bacd9b6eae1e58eb3f801",
+                "Items": [],
+                "Level": 1,
+                "Name": "Tags"
+            }
+        ],
         "DevicesList": {
             "Level": 0
         },
         "MsgHistory": {
             "Level": 0
         },
-        "Portals": [],
+        "Portals": [
+            {
+                "Level": 1,
+                "Name": "CJS_Portal",
+                "SystemKey": "d6b9dc970bf8bda3fff0b3ecb38e01"
+            }
+        ],
         "Push": {
             "Level": 0
         },
