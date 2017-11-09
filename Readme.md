@@ -1,5 +1,6 @@
 # Overview
-![alt text](https://raw.githubusercontent.com/rreinold/real-time-asset-tracking-template/master/screenshot.png "Logo Title Text 1")
+
+<img src="https://raw.githubusercontent.com/rreinold/real-time-asset-tracking-template/master/screenshot.png" alt="Drawing" style="width: 100%;"/>
 
 The need for geospatial computation and spatial data interpretation is a recurring theme among Internet of Things projects.
 
