@@ -10,6 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/rreinold/real-time-asset-tracking-template.git"
   },
+  "asset_types":[
+    "Portals",
+    "Code Services",
+    "Code Libraries",
+    "Triggers",
+    "Collections"
+    ]
   "keywords": [
     "position",
     "tracking",
