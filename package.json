@@ -28,7 +28,15 @@
     "asset",
     "tracking",
     "clearblade",
-    "platform"
+    "platform",
+    "rules",
+    "latitude",
+    "longitude",
+    "geo",
+    "3d",
+    "map",
+    "floorplan",
+    "visualization"
   ],
   "protocols": [
     "mqtt"
