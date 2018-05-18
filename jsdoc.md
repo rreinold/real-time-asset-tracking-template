@@ -118,10 +118,12 @@ If a Tag with the corresponding ID is not found in the Tags collection, a new Ta
 
 ## Point
 **Kind**: global typedef  
+**Link**: geo library [Point Object](https://docs.clearblade.com/v/3/4-developer_reference/platformsdk/geo.js/)  
 <a name="CoordinateSystem"></a>
 
 ## CoordinateSystem
 **Kind**: global typedef  
+**Link**: geo library [Coordinate System](https://docs.clearblade.com/v/3/4-developer_reference/platformsdk/geo.js/)  
 <a name="RTAssetConfiguration"></a>
 
 ## RTAssetConfiguration
