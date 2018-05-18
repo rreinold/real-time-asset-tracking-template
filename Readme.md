@@ -32,7 +32,8 @@ Note: Updates to [Message] schema requires changes to the `LocationLogs` and `Ta
 
 ## Portal
 
->1. Portals Tab > CJS_Portal
+- `CJS_Portal` - Holistic view of your Real-Time Asset Tracking System, with a 3D Map of Tags
+
 ![alt text](https://raw.githubusercontent.com/rreinold/real-time-asset-tracking-template/master/banner.png "")
 
 ## Assets
