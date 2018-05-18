@@ -61,13 +61,13 @@ Note: Updates to [Message](#Message) schema requires changes to the `LocationLog
 - `/geofence` - Publishes status whether a tag is inside the geofence
 
 ### Collections
->1. LocationLogs - History of all MQTT Messages received 
->2. Tags - Latest location of all tags
+>1. `LocationLogs` - History of all MQTT Messages received 
+>2. `Tags` - Latest location of all tags
 
 ### Triggers
->1. trigger_messageToCollectionCreate
->2. trigger_messageToCollectionUpdate
->3. trigger_messageToHTTPPost
+>1. `RTAssetCheckGeofence_location` - Runs RTAssetUpdateTagLocation upon publish to /location topic
+>2. `RTAssetLogLocation_location` - Runs RTAssetLogLocation upon publish to /location topic
+>3. `RTAssetUpdateTagLocation_location` - Runs RTAssetUpdateTagLocation upon publish to /location topic
 
 ## API
 
