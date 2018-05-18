@@ -2,35 +2,43 @@
 
 <img src="https://raw.githubusercontent.com/rreinold/real-time-asset-tracking-template/master/screenshot.png" alt="Drawing" style="width: 100%;"/>
 
-The need for geospatial computation and spatial data interpretation is a recurring theme among Internet of Things projects.
+This System Template provides geospatial computation and spatial data interpretation. It is functional out-of-the-box and is highly extensible.ution.
 
-This template is a fully functional and extensible asset tracking IoT solution.
+This is an ipm package, which contains one or more reusable assets within the ipm Community. The 'package.json' in this repo is a ipm spec's package.json, [here](https://docs.clearblade.com/v/3/6-ipm/spec), which is a superset of npm's package.json spec, [here](https://docs.npmjs.com/files/package.json).
+
+[Browse ipm Packages](https://ipm.clearblade.com)
+
+# Setup
+
+- Connect your devices to ClearBlade Platform
+- Publish to `/location` MQTT Topic using configurable [Message]{TODO LINK TO MESSAGE} JSON Schema 
+- Configure your geofence in `RTAssetConfiguration`
+
+Note: Updates to [Message] schema requires changes to the `LocationLogs` and `Tags` Collection schemas
 
 # Usage
 
 ![](graph.png)
 
-## Data Capture with MQTT
+## 1. Device Publishes to /location topic
 
->1. `Device` connects to [MQTT Broker](https://docs.clearblade.com/v/3/1-platform_concepts/messaging/overview/)
->2. `Subscribe` to `/location` topic
->3. `Publish` a [Message](TODO URL TO MESSAGE) to to `/location` topic
+- Devices publishes to `/location` topic:
 
-`{	"id":"<TAG_ID>",	"lat":<LATITUDE>,	"long":"<LONGITUDE> } `
+`{"id":"<TAG_ID>","lat":<LATITUDE>,"long":"<LONGITUDE>}`
 
+- Geofence When a position is within a geofence, a response message is published on the `geofence` topic:
 
-## Geofence Detection
->1. When a position is within a geofence, a response message is published on the `geofence` topic
+`Point with ID: 2b is within geofence`
 
-
-`Point with ID: 2b is within geofence 1a8b`
 ## Portal
 
 >1. Portals Tab > CJS_Portal
-![alt text](https://raw.githubusercontent.com/rreinold/real-time-asset-tracking-template/master/banner.png "Logo Title Text 1")
+![alt text](https://raw.githubusercontent.com/rreinold/real-time-asset-tracking-template/master/banner.png "")
 
-# Contents
+## Assets
+
 ### Portals
+
 CJS_Portal
 
 > 1. Interactive 3D Map of New York City's Manhattan  
@@ -42,30 +50,29 @@ CJS_Portal
 > 7. Edge Selection  
 
 ### Code Services
->1. messageToCollectionCreate - creates row in MessageHistory collection	 
->2. messageToCollectionUpdate - updates Tags collection with latest position
->3. messageToGeofenceCheck - checks if tag is within configured geofence
->4. messageToHTTPPost - Sends a configurable HTTP POST request
->5. RegularlyFetchAnchors - Fetch static geospatial reference data
->6. uploadPoints - Bulk upload of Tag positions
+- `RTAssetLogLocation` - creates row in LocationLogs collection	 
+- `RTAssetUpdateTagLocation` - updates Tags collection with latest position
+- `RTAssetCheckGeofence` - checks if tag is within configured geofence
+- `RTAssetRESTIntegration`- Sends a configurable HTTP POST request
 
 ### Code Libraries
->1. constants  
+- `RTAssetConfiguration` - Configuration for the System
+- `RTAssetUtil` - Reusable utility methods for System
 
 ### Mesaging Topics
->1. position - Things publish their position on this topic
->2. geofence - Geofence status is published here
+- `/location` - Tags publish their position using configurable [Message] structure
+- `/geofence` - Publishes status whether a tag is inside the geofence
 
 ### Collections
->1. MessageHistory - History of all MQTT Messages received 
->2. Tags - Latest position of all tags
+>1. LocationLogs - History of all MQTT Messages received 
+>2. Tags - Latest location of all tags
 
 ### Triggers
 >1. trigger_messageToCollectionCreate
 >2. trigger_messageToCollectionUpdate
 >3. trigger_messageToHTTPPost
 
-# Development
+## Development
 
 ## How to Update Graph
 

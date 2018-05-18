@@ -4,13 +4,14 @@
   "description": "Real-time asset tracking template for ClearBlade Platform",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "buildGraph": "mmdc -i graph.mmd -o graph.png  -w 1024 -H 768",
+    "jsdoc": "jsdoc2md code/*/*/*.js > jsdoc.md"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rreinold/real-time-asset-tracking-template.git"
   },
-  "asset_types":[
+  "asset_types": [
     "System",
     "Portals",
     "Code Services",
@@ -45,10 +46,8 @@
   "image_url": "https://raw.githubusercontent.com/rreinold/real-time-asset-tracking-template/master/banner.png",
   "homepage": "https://github.com/rreinold/real-time-asset-tracking-template#readme",
   "dependencies": {},
-  "scripts":{
-    "buildGraph":"mmdc -i graph.mmd -o graph.png  -w 1024 -H 768"
-  },
   "devDependencies": {
+    "jsdoc-to-markdown": "^4.0.1",
     "mermaid.cli": "^0.4.6"
   }
 }
