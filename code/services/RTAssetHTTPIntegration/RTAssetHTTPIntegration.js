@@ -1,4 +1,11 @@
-function messageToHTTPPost(req, resp){
+/**
+ * Opportunity to integrate with a REST endpoint using location data
+ * 
+ * Triggered by /location topic
+ */
+ function RTAssetHTTPIntegration(req, resp){
+    // Tag's lat/long is available here to provide to your endpoint
+    log(req.params)
     var options = {
         uri:"https://httpbin.org/post"
     }

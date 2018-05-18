@@ -1,52 +1,44 @@
-/*
-{
-  "params": {
-    "body": "sample message",
-    "userId": "fc8cfcea0a96ebebc7f5d4edd414",
+COLLECTION_NAME = "Tags"
+// Set to true to run this with the test message payload below
+var DEBUG = false;
+var DEBUG_PAYLOAD = {
+    "body": '{"id":"2b","lat":30,"long":-97}',
+    "topic": "location",
     "trigger": "Messaging:Publish",
-    "topic": "create"
-  },
-  "systemKey": "d6b9dc970bf8bda3fff0b3ecb38e01",
-  "systemSecret": "D6B9DC970B928D8B83DEBFBACA43",
-  "userToken": "Chm9sUHyEoKAT13cMJuJaOwfWyp2-vwqDrRxjP6brPZgrZPNAHCBVxz6WRW4RNDJ5Xii80ZFaAcXL_Jjnw==",
-  "isLogging": true,
-  "userid": "fc8cfcea0a96ebebc7f5d4edd414",
-  "userEmail": "rreinold@clearblade.com"
+    "userId": "fc8cfcea0a96ebebc7f5d4edd414"
 }
-*/
-
-function messageToCollectionUpdate(req, resp){
-    var DEBUG = false
+/**
+ * Keeps track of a tag's most recent location
+ * 
+ * Triggered by /location topic
+ * 
+ * If a Tag with the corresponding ID is not found in the Tags collection, a new Tag is created
+ */
+function RTAssetUpdateTagLocation(req, resp){
+    
     if (DEBUG) {
-        req.params = {
-          "body": '{"id":"2b","payload":"im_over_there"}',
-          "topic": "create",
-          "trigger": "Messaging:Publish",
-          "userId": "fc8cfcea0a96ebebc7f5d4edd414"
-        }
+        req.params = DEBUG_PAYLOAD
     }
-    log("Triggered: ")
-    log(JSON.stringify(req))
-    var params = req.params
-    var type = Math.floor(Math.random() * 5)
-    var body = JSON.parse(params.body)
-    if( ! body || ! body.id || ! body.payload){
-        var message = "Unable to parse message body"
-        log(message)
-        resp.error(message)
-    }
-    var changes = {
-        payload: body.payload,
-        last_updated: new Date(),
-    }
-    log(JSON.stringify(changes))
+    
+    log(req)
     
     ClearBlade.init({request:req})
     
-    confirmIdExists(body.id, changes)
+    var message = parseMessage(req.params)
+    message.last_updated = new Date()
     
-    function confirmIdExists(id, changes){
-        var collection = ClearBlade.Collection({collectionName:"Tags"})
+    confirmTagExists(message.id, message)
+    
+    function parseMessage(params){
+        var utils = RTAssetUtil()
+        var parsedBody = utils.verifyMessageSchema(params.body)
+        if( ! parsedBody ){
+            resp.error("Message body is invalid. Expecting schema: " + JSON.stringify(RTAssetConfiguration().messageSchema) + " but found " + params.body)
+        }
+        return parsedBody
+    }
+    function confirmTagExists(id, changes){
+        var collection = ClearBlade.Collection({collectionName:COLLECTION_NAME})
         var query = ClearBlade.Query()
         query.equalTo('id',id)
         collection.count(query,function(err, data){
@@ -56,19 +48,18 @@ function messageToCollectionUpdate(req, resp){
                 resp.error(msg)
             }
             else if(data.count == 1){
-                log("Exists.")
+                log("Exists. Updating Tag ID: " + id)
                 update(id, changes)
             }
             else{
-                log("Does not exist.")
+                log("Does not exist. Creating Tag ID: " + id)
                 create(id, changes)
             }
         })
     }
     
     function update(id, changes){
-        log("Updating")
-        var query = ClearBlade.Query({collectionName:"Tags"})
+        var query = ClearBlade.Query({collectionName:COLLECTION_NAME})
         query.equalTo('id',id)
         query.update(changes, function(err, data){
             if (err || data == null || data != "success"){
@@ -83,10 +74,9 @@ function messageToCollectionUpdate(req, resp){
     }
     
     function create(id, changes){
-        log("Creating")
         var row = changes
         changes.id = id
-        var collection = ClearBlade.Collection({collectionName:"Tags"})
+        var collection = ClearBlade.Collection({collectionName:COLLECTION_NAME})
         collection.create(row, function(err, data){
             if(err || ! data || ! data[0] || ! data[0].item_id){
                 var message = "Failed to create item: " + JSON.stringify(data)

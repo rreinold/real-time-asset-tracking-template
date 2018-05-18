@@ -1,0 +1,13 @@
+{
+    "auto_restart": false,
+    "concurrency": 0,
+    "current_version": 10,
+    "dependencies": "http,log",
+    "execution_timeout": 0,
+    "logging_enabled": "true",
+    "name": "RTAssetRESTIntegration",
+    "params": [],
+    "permissions": {},
+    "run_user": "",
+    "source": "RTAssetRESTIntegration.js"
+}

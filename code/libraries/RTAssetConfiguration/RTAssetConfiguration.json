@@ -1,0 +1,8 @@
+{
+    "api": "",
+    "dependencies": "geo",
+    "description": "Configuration for real-time-asset-tracking",
+    "name": "RTAssetConfiguration",
+    "version": 25,
+    "visibility": "system"
+}

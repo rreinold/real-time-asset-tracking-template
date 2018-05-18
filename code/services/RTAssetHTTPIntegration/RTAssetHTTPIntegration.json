@@ -1,0 +1,13 @@
+{
+    "auto_restart": false,
+    "concurrency": 0,
+    "current_version": 13,
+    "dependencies": "http,log",
+    "execution_timeout": 0,
+    "logging_enabled": "true",
+    "name": "RTAssetHTTPIntegration",
+    "params": [],
+    "permissions": {},
+    "run_user": "",
+    "source": "RTAssetHTTPIntegration.js"
+}

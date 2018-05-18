@@ -1,0 +1,8 @@
+{
+    "api": "",
+    "dependencies": "RTAssetConfiguration",
+    "description": "Utilities for real-time-asset-tracking-template",
+    "name": "RTAssetUtil",
+    "version": 40,
+    "visibility": "system"
+}
