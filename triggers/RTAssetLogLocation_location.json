@@ -8,8 +8,8 @@
         "visibility": true
     },
     "key_value_pairs": {
-        "topic": "position"
+        "topic": "location"
     },
-    "name": "trigger_messageToCollectionUpdate",
-    "service_name": "messageToCollectionUpdate"
+    "name": "RTAssetLogLocation_location",
+    "service_name": "RTAssetLogLocation"
 }
