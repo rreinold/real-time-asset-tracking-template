@@ -2,7 +2,9 @@
 
 <img src="https://raw.githubusercontent.com/rreinold/real-time-asset-tracking-template/master/screenshot.png" alt="Drawing" style="width: 100%;"/>
 
-This System Template provides geospatial computation and spatial data interpretation. It is functional out-of-the-box and is highly extensible.ution.
+This System Template provides geospatial computation and spatial data interpretation. 
+
+It is functional out-of-the-box and is highly extensible.
 
 This is an ipm package, which contains one or more reusable assets within the ipm Community. The 'package.json' in this repo is a ipm spec's package.json, [here](https://docs.clearblade.com/v/3/6-ipm/spec), which is a superset of npm's package.json spec, [here](https://docs.npmjs.com/files/package.json).
 
