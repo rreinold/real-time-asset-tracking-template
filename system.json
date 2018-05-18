@@ -1,8 +1,8 @@
 {
     "auth": true,
-    "description": "Messaging: 'position' with any string payload\nUser: user@clearblade.com / clearblade",
+    "description": "",
     "messaging_url": "staging.clearblade.com:1883",
-    "name": "RealTimeAssetTracking",
+    "name": "dev-real-time-asset-tracking-template",
     "platform_url": "https://staging.clearblade.com",
     "system_key": "d6b9dc970bf8bda3fff0b3ecb38e01",
     "system_secret": "D6B9DC970B928D8B83DEBFBACA43"

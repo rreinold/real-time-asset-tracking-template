@@ -7,13 +7,17 @@ The need for geospatial computation and spatial data interpretation is a recurri
 This template is a fully functional and extensible asset tracking IoT solution.
 
 # Usage
+
+![](graph.png)
+
 ## Data Capture with MQTT
 
->1. `Things` and `Gateways` [connect](https://github.com/clearblade/clearblade-python-sdk#mqtt-messaging) to ClearBlade Platform's [MQTT Broker](https://docs.clearblade.com/v/3/1-platform_concepts/messaging/overview/)
->2. Subscribe to `position` topic
->3. Publish a Position Object (example below) to `position` topic
+>1. `Device` connects to [MQTT Broker](https://docs.clearblade.com/v/3/1-platform_concepts/messaging/overview/)
+>2. `Subscribe` to `/location` topic
+>3. `Publish` a [Message](TODO URL TO MESSAGE) to to `/location` topic
 
-`{	"id":"<TAG_ID>",	"lat":LATITUDE,	"long":"LONGITUDE } `
+`{	"id":"<TAG_ID>",	"lat":<LATITUDE>,	"long":"<LONGITUDE> } `
+
 
 ## Geofence Detection
 >1. When a position is within a geofence, a response message is published on the `geofence` topic
@@ -61,6 +65,14 @@ CJS_Portal
 >2. trigger_messageToCollectionUpdate
 >3. trigger_messageToHTTPPost
 
+# Development
+
+## How to Update Graph
+
+```
+npm i
+npm run buildGraph
+```
 
 # Credit
 

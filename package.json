@@ -10,13 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/rreinold/real-time-asset-tracking-template.git"
   },
-  "asset_types":[
+  "asset_types": [
     "Portals",
     "Code Services",
     "Code Libraries",
     "Triggers",
     "Collections"
-    ],
+  ],
   "keywords": [
     "position",
     "tracking",
@@ -31,14 +31,23 @@
   "protocols": [
     "mqtt"
   ],
-  "domains":[
+  "domains": [
     "Asset Tracking"
   ],
-  "author": {"email":"rob@clearblade.com"},
+  "author": {
+    "email": "rob@clearblade.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rreinold/real-time-asset-tracking-template/issues"
   },
-  "image_url":"https://raw.githubusercontent.com/rreinold/real-time-asset-tracking-template/master/banner.png",
-  "homepage": "https://github.com/rreinold/real-time-asset-tracking-template#readme"
+  "image_url": "https://raw.githubusercontent.com/rreinold/real-time-asset-tracking-template/master/banner.png",
+  "homepage": "https://github.com/rreinold/real-time-asset-tracking-template#readme",
+  "dependencies": {},
+  "scripts":{
+    "buildGraph":"mmdc -i graph.mmd -o graph.png  -w 1024 -H 768"
+  },
+  "devDependencies": {
+    "mermaid.cli": "^0.4.6"
+  }
 }
