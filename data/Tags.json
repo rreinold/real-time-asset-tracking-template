@@ -9012,7 +9012,7 @@
             "type": "tool"
         }
     ],
-    "name": "Tags",
+    "name": "tags",
     "permissions": {
         "Anonymous": 1,
         "Authenticated": 15

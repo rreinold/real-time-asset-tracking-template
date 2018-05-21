@@ -73,7 +73,7 @@
             "timestamp": "2018-05-18T20:55:38.744Z"
         }
     ],
-    "name": "LocationLogs",
+    "name": "location_logs",
     "permissions": {},
     "schema": [
         {
