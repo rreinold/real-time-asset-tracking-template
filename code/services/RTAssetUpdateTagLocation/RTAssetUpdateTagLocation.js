@@ -1,4 +1,4 @@
-COLLECTION_NAME = "Tags"
+COLLECTION_NAME = "tags"
 // Set to true to run this with the test message payload below
 var DEBUG = false;
 var DEBUG_PAYLOAD = {
@@ -12,7 +12,7 @@ var DEBUG_PAYLOAD = {
  * 
  * Triggered by /location topic
  * 
- * If a Tag with the corresponding ID is not found in the Tags collection, a new Tag is created
+ * If a Tag with the corresponding ID is not found in the COLLECTION_NAME, a new row is created
  */
 function RTAssetUpdateTagLocation(req, resp){
     

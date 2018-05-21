@@ -1,4 +1,4 @@
-COLLECTION_NAME = "LocationLogs"
+COLLECTION_NAME = "location_logs"
 // Set to true to run this with the test message payload below
 var DEBUG = false;
 var DEBUG_PAYLOAD = {
