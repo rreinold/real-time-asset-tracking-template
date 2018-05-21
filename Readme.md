@@ -106,7 +106,7 @@ npm run buildGraph
 <dt><a href="#RTAssetUpdateTagLocation">RTAssetUpdateTagLocation()</a></dt>
 <dd><p>Keeps track of a tag&#39;s most recent location</p>
 <p>Triggered by /location topic</p>
-<p>If a Tag with the corresponding ID is not found in the Tags collection, a new Tag is created</p>
+<p>If a Tag with the corresponding ID is not found in the COLLECTION_NAME, a new row is created</p>
 </dd>
 </dl>
 
@@ -170,7 +170,7 @@ Keeps track of a tag's most recent location
 
 Triggered by /location topic
 
-If a Tag with the corresponding ID is not found in the Tags collection, a new Tag is created
+If a Tag with the corresponding ID is not found in the COLLECTION_NAME, a new row is created
 
 **Kind**: global function  
 <a name="Message"></a>
