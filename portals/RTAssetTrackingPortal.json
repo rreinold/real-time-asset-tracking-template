@@ -1411,7 +1411,7 @@
     },
     "description": "Position Tracking Portal",
     "last_updated": "09 Nov 17 04:11 UTC",
-    "name": "CJS_Portal",
+    "name": "RTAssetTrackingPortal",
     "system_key": "d6b9dc970bf8bda3fff0b3ecb38e01",
     "type": "v2"
 }
