@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "buildGraph": "mmdc -i graph.mmd -o graph.png  -w 1024 -H 768",
-    "jsdoc": "jsdoc2md code/*/*/*.js > jsdoc.md"
+    "jsdoc": "jsdoc2md code/*/*/*.js --heading-depth=3 > jsdoc.md"
   },
   "repository": {
     "type": "git",
