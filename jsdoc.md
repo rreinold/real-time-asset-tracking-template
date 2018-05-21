@@ -1,4 +1,4 @@
-## Functions
+### Functions
 
 <dl>
 <dt><a href="#RTAssetCheckGeofence">RTAssetCheckGeofence()</a></dt>
@@ -26,7 +26,7 @@
 </dd>
 </dl>
 
-## Typedefs
+### Typedefs
 
 <dl>
 <dt><a href="#Message">Message</a></dt>
@@ -45,7 +45,7 @@
 
 <a name="RTAssetCheckGeofence"></a>
 
-## RTAssetCheckGeofence()
+### RTAssetCheckGeofence()
 Performs real-time geofence functionalities
 
 Triggered by /location topic
@@ -55,7 +55,7 @@ Status of a tag (inside or outside) is published the GEOFENCE_ALERT_TOPIC
 **Kind**: global function  
 <a name="RTAssetHTTPIntegration"></a>
 
-## RTAssetHTTPIntegration()
+### RTAssetHTTPIntegration()
 Opportunity to integrate with a REST endpoint using location data
 
 Triggered by /location topic
@@ -63,7 +63,7 @@ Triggered by /location topic
 **Kind**: global function  
 <a name="RTAssetLogLocation"></a>
 
-## RTAssetLogLocation()
+### RTAssetLogLocation()
 Insert a row into COLLECTION_NAME upon a publish message to /location
 
 Triggered by /location topic
@@ -71,7 +71,7 @@ Triggered by /location topic
 **Kind**: global function  
 <a name="RTAssetRESTIntegration"></a>
 
-## RTAssetRESTIntegration()
+### RTAssetRESTIntegration()
 Opportunity to implement a REST-based integration to your Real-Time IoT Solution
 
 A placeholder URL is used as an example
@@ -81,7 +81,7 @@ Triggered by /location topic
 **Kind**: global function  
 <a name="RTAssetUpdateTagLocation"></a>
 
-## RTAssetUpdateTagLocation()
+### RTAssetUpdateTagLocation()
 Keeps track of a tag's most recent location
 
 Triggered by /location topic
@@ -91,7 +91,7 @@ If a Tag with the corresponding ID is not found in the Tags collection, a new Ta
 **Kind**: global function  
 <a name="Message"></a>
 
-## Message
+### Message
 **Kind**: global typedef  
 **Properties**
 
@@ -103,7 +103,7 @@ If a Tag with the corresponding ID is not found in the Tags collection, a new Ta
 
 <a name="GeofenceBounds"></a>
 
-## GeofenceBounds
+### GeofenceBounds
 **Kind**: global typedef  
 **Properties**
 
@@ -116,17 +116,17 @@ If a Tag with the corresponding ID is not found in the Tags collection, a new Ta
 
 <a name="Point"></a>
 
-## Point
+### Point
 **Kind**: global typedef  
 **Link**: geo library [Point Object](https://docs.clearblade.com/v/3/4-developer_reference/platformsdk/geo.js/)  
 <a name="CoordinateSystem"></a>
 
-## CoordinateSystem
+### CoordinateSystem
 **Kind**: global typedef  
 **Link**: geo library [Coordinate System](https://docs.clearblade.com/v/3/4-developer_reference/platformsdk/geo.js/)  
 <a name="RTAssetConfiguration"></a>
 
-## RTAssetConfiguration
+### RTAssetConfiguration
 **Kind**: global typedef  
 **Properties**
 
@@ -138,11 +138,11 @@ If a Tag with the corresponding ID is not found in the Tags collection, a new Ta
 
 <a name="RTAssetUtil"></a>
 
-## RTAssetUtil
+### RTAssetUtil
 **Kind**: global typedef  
 <a name="RTAssetUtil.verifyMessageSchema"></a>
 
-### RTAssetUtil.verifyMessageSchema(unparsed) ⇒ [<code>Message</code>](#Message) \| <code>false</code>
+#### RTAssetUtil.verifyMessageSchema(unparsed) ⇒ [<code>Message</code>](#Message) \| <code>false</code>
 **Kind**: static method of [<code>RTAssetUtil</code>](#RTAssetUtil)  
 **Returns**: [<code>Message</code>](#Message) \| <code>false</code> - parsed message, false if failed  
 

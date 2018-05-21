@@ -16,7 +16,9 @@ This is an ipm package, which contains one or more reusable assets within the ip
 - Publish to `/location` MQTT Topic using configurable [Message](#Message) JSON Schema 
 - Configure your geofence in `RTAssetConfiguration`
 
-Note: Updates to [Message](#Message) schema requires changes to the `LocationLogs` and `Tags` Collection schemas
+Note: Updates to [Message](#Message) schema requires changes to the `location_logs` and `tags` Collection schemas
+
+
 
 # Usage
 
@@ -31,6 +33,15 @@ Note: Updates to [Message](#Message) schema requires changes to the `LocationLog
 - Geofence When a position is within a geofence, a response message is published on the `geofence` topic:
 
 `Point with ID: 2b is within geofence`
+
+## Development
+
+### How to Update Graph
+
+```
+npm i
+npm run buildGraph
+```
 
 ## Assets
 
@@ -47,7 +58,7 @@ Note: Updates to [Message](#Message) schema requires changes to the `LocationLog
 > 7. Edge Selection  
 
 ### Code Services
-- `RTAssetLogLocation` - creates row in LocationLogs collection	 
+- `RTAssetLogLocation` - creates row in location_logs collection	 
 - `RTAssetUpdateTagLocation` - updates Tags collection with latest position
 - `RTAssetCheckGeofence` - checks if tag is within configured geofence
 - `RTAssetRESTIntegration`- Sends a configurable HTTP POST request
@@ -61,8 +72,8 @@ Note: Updates to [Message](#Message) schema requires changes to the `LocationLog
 - `/geofence` - Publishes status whether a tag is inside the geofence
 
 ### Collections
->1. `LocationLogs` - History of all MQTT Messages received 
->2. `Tags` - Latest location of all tags
+>1. `location_logs` - History of all MQTT Messages received 
+>2. `tags` - Latest location of all tags
 
 ### Triggers
 >1. `RTAssetCheckGeofence_location` - Runs RTAssetUpdateTagLocation upon publish to /location topic
@@ -71,7 +82,7 @@ Note: Updates to [Message](#Message) schema requires changes to the `LocationLog
 
 ## API
 
-## Functions
+### Functions
 
 <dl>
 <dt><a href="#RTAssetCheckGeofence">RTAssetCheckGeofence()</a></dt>
@@ -99,7 +110,7 @@ Note: Updates to [Message](#Message) schema requires changes to the `LocationLog
 </dd>
 </dl>
 
-## Typedefs
+### Typedefs
 
 <dl>
 <dt><a href="#Message">Message</a></dt>
@@ -118,7 +129,7 @@ Note: Updates to [Message](#Message) schema requires changes to the `LocationLog
 
 <a name="RTAssetCheckGeofence"></a>
 
-## RTAssetCheckGeofence()
+### RTAssetCheckGeofence()
 Performs real-time geofence functionalities
 
 Triggered by /location topic
@@ -128,7 +139,7 @@ Status of a tag (inside or outside) is published the GEOFENCE_ALERT_TOPIC
 **Kind**: global function  
 <a name="RTAssetHTTPIntegration"></a>
 
-## RTAssetHTTPIntegration()
+### RTAssetHTTPIntegration()
 Opportunity to integrate with a REST endpoint using location data
 
 Triggered by /location topic
@@ -136,7 +147,7 @@ Triggered by /location topic
 **Kind**: global function  
 <a name="RTAssetLogLocation"></a>
 
-## RTAssetLogLocation()
+### RTAssetLogLocation()
 Insert a row into COLLECTION_NAME upon a publish message to /location
 
 Triggered by /location topic
@@ -144,7 +155,7 @@ Triggered by /location topic
 **Kind**: global function  
 <a name="RTAssetRESTIntegration"></a>
 
-## RTAssetRESTIntegration()
+### RTAssetRESTIntegration()
 Opportunity to implement a REST-based integration to your Real-Time IoT Solution
 
 A placeholder URL is used as an example
@@ -154,7 +165,7 @@ Triggered by /location topic
 **Kind**: global function  
 <a name="RTAssetUpdateTagLocation"></a>
 
-## RTAssetUpdateTagLocation()
+### RTAssetUpdateTagLocation()
 Keeps track of a tag's most recent location
 
 Triggered by /location topic
@@ -164,7 +175,7 @@ If a Tag with the corresponding ID is not found in the Tags collection, a new Ta
 **Kind**: global function  
 <a name="Message"></a>
 
-## Message
+### Message
 **Kind**: global typedef  
 **Properties**
 
@@ -176,7 +187,7 @@ If a Tag with the corresponding ID is not found in the Tags collection, a new Ta
 
 <a name="GeofenceBounds"></a>
 
-## GeofenceBounds
+### GeofenceBounds
 **Kind**: global typedef  
 **Properties**
 
@@ -189,17 +200,17 @@ If a Tag with the corresponding ID is not found in the Tags collection, a new Ta
 
 <a name="Point"></a>
 
-## Point
+### Point
 **Kind**: global typedef  
 **Link**: geo library [Point Object](https://docs.clearblade.com/v/3/4-developer_reference/platformsdk/geo.js/)  
 <a name="CoordinateSystem"></a>
 
-## CoordinateSystem
+### CoordinateSystem
 **Kind**: global typedef  
 **Link**: geo library [Coordinate System](https://docs.clearblade.com/v/3/4-developer_reference/platformsdk/geo.js/)  
 <a name="RTAssetConfiguration"></a>
 
-## RTAssetConfiguration
+### RTAssetConfiguration
 **Kind**: global typedef  
 **Properties**
 
@@ -211,11 +222,11 @@ If a Tag with the corresponding ID is not found in the Tags collection, a new Ta
 
 <a name="RTAssetUtil"></a>
 
-## RTAssetUtil
+### RTAssetUtil
 **Kind**: global typedef  
 <a name="RTAssetUtil.verifyMessageSchema"></a>
 
-### RTAssetUtil.verifyMessageSchema(unparsed) ⇒ [<code>Message</code>](#Message) \| <code>false</code>
+#### RTAssetUtil.verifyMessageSchema(unparsed) ⇒ [<code>Message</code>](#Message) \| <code>false</code>
 **Kind**: static method of [<code>RTAssetUtil</code>](#RTAssetUtil)  
 **Returns**: [<code>Message</code>](#Message) \| <code>false</code> - parsed message, false if failed  
 
@@ -223,16 +234,3 @@ If a Tag with the corresponding ID is not found in the Tags collection, a new Ta
 | --- | --- | --- |
 | unparsed | <code>string</code> | message body, needs to be JSON format |
 
-
-## Development
-
-### How to Update Graph
-
-```
-npm i
-npm run buildGraph
-```
-
-# Credit
-
-Icon by BomSymbols
