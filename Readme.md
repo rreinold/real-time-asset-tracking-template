@@ -59,7 +59,7 @@ npm run buildGraph
 
 ### Code Services
 - `RTAssetLogLocation` - creates row in location_logs collection	 
-- `RTAssetUpdateTagLocation` - updates Tags collection with latest position
+- `RTAssetUpdateTagLocation` - updates tags collection with latest position
 - `RTAssetCheckGeofence` - checks if tag is within configured geofence
 - `RTAssetRESTIntegration`- Sends a configurable HTTP POST request
 
