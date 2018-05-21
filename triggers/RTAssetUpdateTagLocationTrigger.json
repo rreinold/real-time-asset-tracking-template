@@ -10,6 +10,6 @@
     "key_value_pairs": {
         "topic": "location"
     },
-    "name": "RTAssetLogLocation_location",
-    "service_name": "RTAssetLogLocation"
+    "name": "RTAssetUpdateTagLocationTrigger",
+    "service_name": "RTAssetUpdateTagLocation"
 }

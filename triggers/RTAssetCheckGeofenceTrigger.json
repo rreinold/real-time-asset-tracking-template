@@ -10,6 +10,6 @@
     "key_value_pairs": {
         "topic": "location"
     },
-    "name": "RTAssetUpdateTagLocation_location",
-    "service_name": "RTAssetUpdateTagLocation"
+    "name": "RTAssetCheckGeofenceTrigger",
+    "service_name": "RTAssetCheckGeofence"
 }
