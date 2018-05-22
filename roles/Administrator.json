@@ -9,7 +9,33 @@
         "AllServices": {
             "Level": 0
         },
-        "CodeServices": [],
+        "CodeServices": [
+            {
+                "Level": 1,
+                "Name": "RTAssetCheckGeofence",
+                "SystemKey": "d6b9dc970bf8bda3fff0b3ecb38e01"
+            },
+            {
+                "Level": 1,
+                "Name": "RTAssetHTTPIntegration",
+                "SystemKey": "d6b9dc970bf8bda3fff0b3ecb38e01"
+            },
+            {
+                "Level": 1,
+                "Name": "RTAssetLogLocation",
+                "SystemKey": "d6b9dc970bf8bda3fff0b3ecb38e01"
+            },
+            {
+                "Level": 1,
+                "Name": "RTAssetRESTIntegration",
+                "SystemKey": "d6b9dc970bf8bda3fff0b3ecb38e01"
+            },
+            {
+                "Level": 1,
+                "Name": "RTAssetUpdateTagLocation",
+                "SystemKey": "d6b9dc970bf8bda3fff0b3ecb38e01"
+            }
+        ],
         "Collections": [
             {
                 "Columns": [],
