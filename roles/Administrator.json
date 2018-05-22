@@ -3,20 +3,61 @@
     "ID": "Administrator",
     "Name": "Administrator",
     "Permissions": {
+        "AllCollections": {
+            "Level": 0
+        },
+        "AllServices": {
+            "Level": 0
+        },
         "CodeServices": [],
-        "Collections": [],
+        "Collections": [
+            {
+                "Columns": [],
+                "ID": "bee299b00bc4fedd94cac3b0f1ee01",
+                "Items": [],
+                "Level": 15,
+                "Name": "location_logs"
+            },
+            {
+                "Columns": [],
+                "ID": "9ee299b00bc6fbf9ace8e6d88a7b",
+                "Items": [],
+                "Level": 15,
+                "Name": "tags"
+            }
+        ],
+        "Deployments": {
+            "Level": 0
+        },
         "DevicesList": {
+            "Level": 0
+        },
+        "EdgesList": {
             "Level": 0
         },
         "MsgHistory": {
             "Level": 0
         },
-        "Portals": [],
+        "Portals": [
+            {
+                "Level": 5,
+                "Name": "RTAssetTrackingPortal",
+                "SystemKey": "d6b9dc970bf8bda3fff0b3ecb38e01"
+            }
+        ],
         "Push": {
             "Level": 0
         },
-        "SystemServices": null,
+        "Roles": {
+            "Level": 0
+        },
+        "Timers": {
+            "Level": 0
+        },
         "Topics": [],
+        "Triggers": {
+            "Level": 0
+        },
         "UsersList": {
             "Level": 0
         }
