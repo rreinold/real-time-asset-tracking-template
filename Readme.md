@@ -47,7 +47,7 @@ npm run buildGraph
 
 ### Portals
 
-- `CJS_Portal` - Holistic view of your Real-Time Asset Tracking System, with a 3D Map of Tags
+- `RTAssetTrackingPortal` - Holistic view of your Real-Time Asset Tracking System, with a 3D Map of Tags
 
 > 1. Interactive 3D Map of New York City's Manhattan  
 > 2. Pie Chart of Anomalies Detected  
