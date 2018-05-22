@@ -11,6 +11,31 @@
         },
         "CodeServices": [
             {
+                "Level": 0,
+                "Name": "RTAssetCheckGeofence",
+                "SystemKey": "d6b9dc970bf8bda3fff0b3ecb38e01"
+            },
+            {
+                "Level": 0,
+                "Name": "RTAssetHTTPIntegration",
+                "SystemKey": "d6b9dc970bf8bda3fff0b3ecb38e01"
+            },
+            {
+                "Level": 0,
+                "Name": "RTAssetLogLocation",
+                "SystemKey": "d6b9dc970bf8bda3fff0b3ecb38e01"
+            },
+            {
+                "Level": 0,
+                "Name": "RTAssetRESTIntegration",
+                "SystemKey": "d6b9dc970bf8bda3fff0b3ecb38e01"
+            },
+            {
+                "Level": 0,
+                "Name": "RTAssetUpdateTagLocation",
+                "SystemKey": "d6b9dc970bf8bda3fff0b3ecb38e01"
+            },
+            {
                 "Level": 1,
                 "Name": "messageToCollectionCreate",
                 "SystemKey": "d6b9dc970bf8bda3fff0b3ecb38e01"
