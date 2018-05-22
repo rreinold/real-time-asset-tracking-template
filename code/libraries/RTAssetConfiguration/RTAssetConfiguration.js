@@ -13,11 +13,11 @@
  */
  /**
   * @typedef Point 
-  * geo library {@link https://docs.clearblade.com/v/3/4-developer_reference/platformsdk/geo.js/ Point Object}
+  * @link geo library {@link https://docs.clearblade.com/v/3/4-developer_reference/platformsdk/geo.js/ Point Object}
   */
  /**
   * @typedef CoordinateSystem
-  *  geo library {@link https://docs.clearblade.com/v/3/4-developer_reference/platformsdk/geo.js/ Coordinate System}
+  * @link geo library {@link https://docs.clearblade.com/v/3/4-developer_reference/platformsdk/geo.js/ Coordinate System}
   */
 /**
  * @typedef RTAssetConfiguration Configuration for real-time-asset-tracking-template

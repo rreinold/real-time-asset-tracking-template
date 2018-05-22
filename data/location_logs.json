@@ -1,0 +1,105 @@
+{
+    "app_id": "d6b9dc970bf8bda3fff0b3ecb38e01",
+    "collection_id": "faeef7af0ba886bcbb9ea5aaaf2a",
+    "items": [
+        {
+            "id": "2b",
+            "item_id": "04eddc70-e632-4aa3-82ce-21f50f63b800",
+            "lat": 3.266822,
+            "long": -97.742462,
+            "timestamp": "2018-05-18T19:32:38.288Z"
+        },
+        {
+            "id": "2b",
+            "item_id": "16af51fc-bdfc-46b8-b4a7-489c4c91049a",
+            "lat": 30.266822,
+            "long": -97.742462,
+            "timestamp": "2018-05-18T21:10:08.659Z"
+        },
+        {
+            "id": "2b",
+            "item_id": "28174370-bfb3-4c0b-9819-95cc447a008c",
+            "lat": 30.266822,
+            "long": -97.742462,
+            "timestamp": "2018-05-18T19:34:44.209Z"
+        },
+        {
+            "id": "2b",
+            "item_id": "4b914c06-ccff-4b48-9af7-95f5609c0c2f",
+            "lat": 3.266822,
+            "long": -97.742462,
+            "timestamp": "2018-05-18T19:32:37.899Z"
+        },
+        {
+            "id": "2b",
+            "item_id": "6b12b499-c8f8-4c1c-ba16-d5900d2f4a98",
+            "lat": 3.266822,
+            "long": -97.742462,
+            "timestamp": "2018-05-18T19:32:38.1Z"
+        },
+        {
+            "id": "2b",
+            "item_id": "aafe6c59-1502-454b-b30b-694e1af6fd1b",
+            "lat": 30.266822,
+            "long": -97.742462,
+            "timestamp": "2018-05-18T21:08:50.456Z"
+        },
+        {
+            "id": "2b",
+            "item_id": "b3c61877-3e8e-4694-a8ae-7c3edb9959ac",
+            "lat": 3.266822,
+            "long": -97.742462,
+            "timestamp": "2018-05-18T19:32:36.649Z"
+        },
+        {
+            "id": "2b",
+            "item_id": "c24c7725-88f0-4535-ac14-916823363302",
+            "lat": 3.266822,
+            "long": -97.742462,
+            "timestamp": "2018-05-18T19:32:37.551Z"
+        },
+        {
+            "id": "2b",
+            "item_id": "dfd02966-f364-48cb-a5ab-473916508dfd",
+            "lat": 30.266822,
+            "long": -97.742462,
+            "timestamp": "2018-05-18T20:55:34.619Z"
+        },
+        {
+            "id": "2b",
+            "item_id": "ed2ebdc9-c509-41ed-9a0d-8b98ec668446",
+            "lat": 30.266822,
+            "long": -97.742462,
+            "timestamp": "2018-05-18T20:55:38.744Z"
+        }
+    ],
+    "name": "location_logs",
+    "permissions": {},
+    "schema": [
+        {
+            "ColumnName": "item_id",
+            "ColumnType": "uuid",
+            "PK": true
+        },
+        {
+            "ColumnName": "lat",
+            "ColumnType": "double",
+            "PK": false
+        },
+        {
+            "ColumnName": "long",
+            "ColumnType": "double",
+            "PK": false
+        },
+        {
+            "ColumnName": "timestamp",
+            "ColumnType": "timestamp",
+            "PK": false
+        },
+        {
+            "ColumnName": "id",
+            "ColumnType": "string",
+            "PK": false
+        }
+    ]
+}

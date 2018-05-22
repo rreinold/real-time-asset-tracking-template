@@ -8,8 +8,8 @@
         "visibility": true
     },
     "key_value_pairs": {
-        "topic": "position"
+        "topic": "location"
     },
-    "name": "trigger_messageToCollectionCreate",
-    "service_name": "messageToCollectionCreate"
+    "name": "RTAssetLogLocationTrigger",
+    "service_name": "RTAssetLogLocation"
 }

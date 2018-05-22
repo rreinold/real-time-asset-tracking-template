@@ -8,8 +8,8 @@
         "visibility": true
     },
     "key_value_pairs": {
-        "topic": "position"
+        "topic": "location"
     },
-    "name": "Trigger_messageToHTTPPost",
-    "service_name": "messageToHTTPPost"
+    "name": "RTAssetCheckGeofenceTrigger",
+    "service_name": "RTAssetCheckGeofence"
 }
